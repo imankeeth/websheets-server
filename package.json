@@ -21,10 +21,14 @@
     "fastify": "^2.0.0",
     "fastify-basic-auth": "^0.3.1",
     "fastify-boom": "^0.1.0",
+    "fastify-nextjs": "^4.1.1",
     "fastify-swagger": "^2.3.2",
     "mongoose": "^5.4.15",
+    "next": "^9.3.4",
     "nodemon": "^1.17.3",
-    "pino-pretty": "^2.5.0"
+    "pino-pretty": "^2.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

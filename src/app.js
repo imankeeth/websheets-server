@@ -23,6 +23,11 @@ module.exports = fastify;
         // Plugins
         fastify.register(require('fastify-boom'));
         fastify.register(require('fastify-swagger'), config.documentation);
+        fastify
+            .register(require('fastify-nextjs'))
+            .after(() => {
+                fastify.next('/')
+            });
         fastify.register(v1, { prefix: '/v1' });
 
         // Server
