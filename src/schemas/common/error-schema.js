@@ -4,6 +4,6 @@ module.exports = {
     properties: {
         error: { type: 'string' },
         message: { type: 'string' },
-        statusCode: { type: 'number' }
-    }
+        statusCode: { type: 'number' },
+    },
 };

@@ -9,10 +9,10 @@ module.exports = {
         response: {
             200: {
                 description: 'Successful response',
-                type: 'string'
+                type: 'string',
             },
             400: notFoundSchema,
-            500: errorSchema
-        }
-    }
+            500: errorSchema,
+        },
+    },
 };

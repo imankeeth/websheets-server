@@ -10,7 +10,7 @@ module.exports = () => {
             method: 'GET',
             url: '/keep-alive',
             schema: schema.keepAlive,
-            handler: controller.keepAlive
-        }
+            handler: controller.keepAlive,
+        },
     ];
 };

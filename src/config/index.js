@@ -8,27 +8,27 @@ const baseConfig = {
     mongodb: {
         url: process.env.MONGO_URL || 'mongodb://mongo/db_name',
         options: {
-            useNewUrlParser: true
-        }
+            useNewUrlParser: true,
+        },
     },
     documentation: {
         swagger: {
             info: {
                 version,
                 title: 'API Documentation',
-                description: 'API Endpoints Documentation'
+                description: 'API Endpoints Documentation',
             },
             schemes: [envConfig.fastify.https ? 'https' : 'http'],
             consumes: ['application/json'],
             produces: ['application/json'],
             securityDefinitions: {
                 basicAuth: {
-                    type: 'basic'
-                }
-            }
+                    type: 'basic',
+                },
+            },
         },
-        exposeRoute: true
-    }
+        exposeRoute: true,
+    },
 };
 
 module.exports = { ...baseConfig, ...envConfig };

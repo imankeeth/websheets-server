@@ -14,7 +14,7 @@
     "start:dev": "NODE_ENV=dev nodemon src/app.js",
     "start": "node src/app.js",
     "test": "jest",
-    "format": "prettier-eslint --single-quote --tab-width 4 trailing-comma es5 --write \"src/**/*.js\""
+    "format": "prettier-eslint --single-quote --tab-width 4 --trailing-comma es5 --print-width 120  --write \"src/**/*.js\""
   },
   "dependencies": {
     "cors": "^2.8.4",
@@ -23,13 +23,17 @@
     "fastify-basic-auth": "^0.3.1",
     "fastify-boom": "^0.1.0",
     "fastify-nextjs": "^4.1.1",
+    "fastify-static": "^2.6.0",
     "fastify-swagger": "^2.3.2",
     "mongoose": "^5.4.15",
     "next": "^9.3.4",
     "nodemon": "^1.17.3",
     "pino-pretty": "^2.5.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-landing-page": "^2.0.2",
+    "rebass": "^2.1.0",
+    "styled-components": "^3.4.10"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

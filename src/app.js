@@ -1,6 +1,7 @@
 require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 const config = require('./config');
 const { v1 } = require('./routes');
@@ -12,10 +13,10 @@ module.exports = fastify;
 (async function() {
     try {
         // Connect to DB
-        if (process.env.NODE_ENV !== 'test') {
-            await mongoose.connect(config.mongodb.url, config.mongodb.options);
-            fastify.log.info('Mongodb Connected');
-        }
+        //if (process.env.NODE_ENV !== 'test') {
+        //    await mongoose.connect(config.mongodb.url, config.mongodb.options);
+        //    fastify.log.info('Mongodb Connected');
+        //}
 
         // Middlewares
         fastify.use(cors());
@@ -23,23 +24,18 @@ module.exports = fastify;
         // Plugins
         fastify.register(require('fastify-boom'));
         //fastify.register(require('fastify-swagger'), config.documentation);
+        fastify.register(require('fastify-static'), { root: path.join(__dirname, '/public') });
         const dev = process.env.NODE_ENV !== 'production';
-        fastify
-            .register(require('fastify-nextjs'), {dev})
-            .after(() => {
-                fastify.next('/')
-            });
+        fastify.register(require('fastify-nextjs'), { dev }).after(() => {
+            fastify.next('/');
+        });
         fastify.register(v1, { prefix: '/v1' });
 
         // Server
 
         await fastify.listen(config.port, '0.0.0.0');
         //fastify.swagger();
-        fastify.log.info(
-            '%s listening in %s environment',
-            config.name,
-            process.env.NODE_ENV
-        );
+        fastify.log.info('%s listening in %s environment', config.name, process.env.NODE_ENV);
     } catch (err) {
         fastify.log.error(err);
         process.exit(1);

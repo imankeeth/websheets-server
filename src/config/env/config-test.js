@@ -3,7 +3,7 @@ module.exports = {
     fastify: {
         logger: {
             prettyPrint: true,
-            level: 'info'
-        }
-    }
+            level: 'info',
+        },
+    },
 };
