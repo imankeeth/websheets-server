@@ -1,6 +1,23 @@
 import React from 'react';
-import { Provider, Heading, Subhead, Flex, Box, Relative, Absolute, NavLink } from 'rebass';
-import { Hero, CallToAction, ScrollDownIndicator, Section, MacWindow, Phone, PricingTier } from 'react-landing-page';
+import {
+    Provider,
+    Heading,
+    Subhead,
+    Flex,
+    Box,
+    Relative,
+    Absolute,
+    NavLink,
+} from 'rebass';
+import {
+    Hero,
+    CallToAction,
+    ScrollDownIndicator,
+    Section,
+    MacWindow,
+    Phone,
+    PricingTier,
+} from 'react-landing-page';
 
 const featherCheckmark = (
     <svg
@@ -18,7 +35,11 @@ const featherCheckmark = (
         <polyline points="22 4 12 14.01 9 11.01" />
     </svg>
 );
-
+const theme = {
+    colors: {
+        blue: '#a79344',
+    },
+};
 function IndexPage() {
     return (
         <Provider>
@@ -28,7 +49,11 @@ function IndexPage() {
                         <NavLink href="/" fontSize={3}>
                             WEBSHEETS
                         </NavLink>
-                        <CallToAction href="/login/google" ml="auto">
+                        <CallToAction
+                            theme={theme}
+                            href="/login/google"
+                            ml="auto"
+                        >
                             Get Started
                         </CallToAction>
                     </Flex>
@@ -37,35 +62,49 @@ function IndexPage() {
             <Hero color="black">
                 <Flex flexWrap="wrap" alignItems="center">
                     <Flex alignItems="flex-start" width={[1, 1, 1 / 2]} p={3}>
-                        <MacWindow style={{ transform: 'translate(32px, 0px)' }} src="/landing-page-sheet.jpg" />
-                        <MacWindow style={{ transform: 'translate(0, 50px)' }} src="/transformed-website.jpg" />
+                        <MacWindow
+                            style={{ transform: 'translate(32px, 0px)' }}
+                            src="/landing-page-sheet.jpg"
+                        />
+                        <MacWindow
+                            style={{ transform: 'translate(0, 50px)' }}
+                            src="/transformed-website.jpg"
+                        />
                     </Flex>
                     <Box width={[1, 1, 1 / 2]} p={3}>
                         <Subhead textAlign="center">
-                            Convert your sheet data into a beautiful website or dashboard
+                            Convert your sheet data into a beautiful website or
+                            dashboard
                         </Subhead>
                         <Flex mt={3} flexWrap="wrap" justifyContent="center">
-                            <CallToAction href="/getting-started" mr={3}>
+                            {/* <Provider theme={{ colors: { blue: '#a79344' } }}> */}
+                            <CallToAction
+                                theme={theme}
+                                href="/getting-started"
+                                mr={3}
+                            >
                                 Get Started Now
                             </CallToAction>
+                            {/* </Provider> */}
                         </Flex>
                     </Box>
                 </Flex>
                 <ScrollDownIndicator />
             </Hero>
-            <Section width={1} heading="Pricing" bg="green">
+            <Section width={1} bg="#0b2647">
+                <Heading color="white">Pricing</Heading>
                 <PricingTier
-                    bg="blue"
+                    bg="white"
                     tierName="Basic"
                     price="Free"
                     billingType="1 website"
                     sellingPoints={[
                         '-  Connect 1 sheet',
                         '-  Custom domain with SSL',
-                        '-  3 Subpages'
+                        '-  3 Subpages',
                     ]}
                 >
-                    <CallToAction bg="black" width={1} mt="auto">
+                    <CallToAction theme={theme} width={1} mt="auto">
                         Get Started
                     </CallToAction>
                 </PricingTier>
