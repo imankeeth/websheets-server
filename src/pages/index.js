@@ -91,17 +91,17 @@ function IndexPage() {
                 </Flex>
                 <ScrollDownIndicator />
             </Hero>
-            <Section width={1} bg="#0b2647">
+            <Section width={1} bg="#0b2647" color='white'>
                 <Heading color="white">Pricing</Heading>
                 <PricingTier
-                    bg="white"
+                    bg="#041121"
                     tierName="Basic"
                     price="Free"
                     billingType="1 website"
                     sellingPoints={[
-                        '-  Connect 1 sheet',
-                        '-  Custom domain with SSL',
-                        '-  3 Subpages',
+                        '✔  Connect 1 sheet',
+                        '✔  Custom domain with SSL',
+                        '✔  3 Subpages',
                     ]}
                 >
                     <CallToAction theme={theme} width={1} mt="auto">
