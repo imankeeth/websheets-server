@@ -34,7 +34,7 @@ module.exports = fastify;
         // Server
 
         await fastify.listen(config.port, '0.0.0.0');
-        fastify.swagger();
+        //fastify.swagger();
         fastify.log.info(
             '%s listening in %s environment',
             config.name,
