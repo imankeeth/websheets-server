@@ -6,7 +6,7 @@ const config = require('./config');
 const { v1 } = require('./routes');
 const fastify = require('fastify')(config.fastify);
 const oauthPlugin = require('fastify-oauth2')
-const {CovidSheetData} = require('./covid');
+const {CovidSheetData} = require('./spreadsheet/covid');
 
 // Export fastify for testing purpose
 module.exports = fastify;
