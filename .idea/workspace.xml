@@ -96,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586641111471</updated>
-      <workItem from="1586641113217" duration="5723000" />
+      <workItem from="1586641113217" duration="7832000" />
     </task>
     <servers />
   </component>
@@ -104,30 +104,34 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1635" height="297" key="GridCell.Tab.0.bottom" timestamp="1586650030722">
+    <state x="511" y="-731" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586652666826">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650030722" />
-    <state width="1635" height="297" key="GridCell.Tab.0.center" timestamp="1586650030721">
+    <state x="511" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586652666826" />
+    <state width="1635" height="297" key="GridCell.Tab.0.bottom" timestamp="1586650442401">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650030721" />
-    <state width="1635" height="297" key="GridCell.Tab.0.left" timestamp="1586650030720">
+    <state width="1635" height="297" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442401" />
+    <state width="1635" height="297" key="GridCell.Tab.0.center" timestamp="1586650442399">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650030720" />
-    <state width="1635" height="297" key="GridCell.Tab.0.right" timestamp="1586650030721">
+    <state width="1635" height="297" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442399" />
+    <state width="1635" height="297" key="GridCell.Tab.0.left" timestamp="1586650442397">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650030721" />
+    <state width="1635" height="297" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442397" />
+    <state width="1635" height="297" key="GridCell.Tab.0.right" timestamp="1586650442400">
+      <screen x="-120" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1635" height="297" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442400" />
     <state x="-104" y="-901" key="SettingsEditor" timestamp="1586642580545">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-104" y="-901" key="SettingsEditor/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586642580545" />
-    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586646983709">
+    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586652033510">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586646983709" />
+    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586652033510" />
     <state x="-120" y="-918" key="new project wizard" timestamp="1586642054664">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
