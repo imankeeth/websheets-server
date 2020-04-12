@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53664ef0-c68a-4224-ab48-7b014be2f595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/user/[id].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/spreadsheet-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/registerNext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/v1/info-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/v1/info-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/v1/info-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/v1/info-route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/v1/info-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/v1/info-schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spreadsheet/covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/spreadsheet/covid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586641111471</updated>
       <workItem from="1586641113217" duration="10760000" />
-      <workItem from="1586657586541" duration="29228000" />
+      <workItem from="1586657586541" duration="29652000" />
     </task>
     <servers />
   </component>
