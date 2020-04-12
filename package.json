@@ -26,6 +26,7 @@
     "fastify-oauth2": "^3.2.0",
     "fastify-static": "^2.6.0",
     "fastify-swagger": "^2.3.2",
+    "googleapis": "^48.0.0",
     "mongoose": "^5.4.15",
     "next": "^9.3.4",
     "nodemon": "^1.17.3",

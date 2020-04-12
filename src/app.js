@@ -6,6 +6,7 @@ const config = require('./config');
 const { v1 } = require('./routes');
 const fastify = require('fastify')(config.fastify);
 const oauthPlugin = require('fastify-oauth2')
+const {CovidSheetData} = require('./covid');
 
 // Export fastify for testing purpose
 module.exports = fastify;
@@ -51,12 +52,9 @@ module.exports = fastify;
 
         fastify.get('/login/google/callback', async function (request, reply) {
             const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request)
-          
-            console.log('token we got---------------------------',token.access_token)
-          
             // if later you need to refresh the token you can use
             // const newToken = await this.getNewAccessTokenUsingRefreshToken(token.refresh_token)
-          
+            CovidSheetData(token);
             reply.redirect('/');
           });
 
