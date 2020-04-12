@@ -22,8 +22,8 @@ module.exports = fastify;
 
         // Plugins
         fastify.register(require('fastify-boom'));
-        fastify.register(require('fastify-swagger'), config.documentation);
-        const dev = process.env.NODE_ENV !== 'prod';
+        //fastify.register(require('fastify-swagger'), config.documentation);
+        const dev = process.env.NODE_ENV !== 'production';
         fastify
             .register(require('fastify-nextjs'), {dev})
             .after(() => {

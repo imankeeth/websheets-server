@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start:dev": "NODE_ENV=dev nodemon src/app.js",
-    "start": "NODE_ENV=prod node src/app.js",
+    "start": "node src/app.js",
     "test": "jest",
     "format": "prettier-eslint --single-quote --tab-width 4 trailing-comma es5 --write \"src/**/*.js\""
   },

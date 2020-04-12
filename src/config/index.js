@@ -1,6 +1,6 @@
 const { version } = require('../../package');
 
-const envConfig = require(`./env/config-${process.env.NODE_ENV || 'prod'}`);
+const envConfig = require(`./env/config-${process.env.NODE_ENV || 'production'}`);
 
 const baseConfig = {
     name: 'API',

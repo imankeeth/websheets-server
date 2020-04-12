@@ -2,40 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53664ef0-c68a-4224-ab48-7b014be2f595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/websheets-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/adapters/userAdapters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/authController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/userController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/db/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/EmailTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/EmailVerifyToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/Errors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/Messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/root.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/aws-ses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/crypto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/httpClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/urlBuild.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/validations/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/appSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/configurationAdaptor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/env/config-prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env/config-production.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +42,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.16.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="standardjs.codestyle.accepted" value="true" />
@@ -103,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586641111471</updated>
-      <workItem from="1586641113217" duration="10480000" />
+      <workItem from="1586641113217" duration="10760000" />
+      <workItem from="1586657586541" duration="295000" />
     </task>
     <servers />
   </component>
@@ -115,30 +99,30 @@
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
     <state x="511" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586652666826" />
-    <state width="1635" height="297" key="GridCell.Tab.0.bottom" timestamp="1586650442401">
+    <state width="1635" height="297" key="GridCell.Tab.0.bottom" timestamp="1586657564912">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442401" />
-    <state width="1635" height="297" key="GridCell.Tab.0.center" timestamp="1586650442399">
+    <state width="1635" height="297" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586657564912" />
+    <state width="1635" height="297" key="GridCell.Tab.0.center" timestamp="1586657564911">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442399" />
-    <state width="1635" height="297" key="GridCell.Tab.0.left" timestamp="1586650442397">
+    <state width="1635" height="297" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586657564911" />
+    <state width="1635" height="297" key="GridCell.Tab.0.left" timestamp="1586657564909">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442397" />
-    <state width="1635" height="297" key="GridCell.Tab.0.right" timestamp="1586650442400">
+    <state width="1635" height="297" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586657564909" />
+    <state width="1635" height="297" key="GridCell.Tab.0.right" timestamp="1586657564911">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1635" height="297" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586650442400" />
+    <state width="1635" height="297" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586657564911" />
     <state x="-104" y="-901" key="SettingsEditor" timestamp="1586642580545">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-104" y="-901" key="SettingsEditor/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586642580545" />
-    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586652033510">
+    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586657844390">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586652033510" />
+    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586657844390" />
     <state x="-120" y="-918" key="new project wizard" timestamp="1586642054664">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
