@@ -13,6 +13,7 @@ module.exports = fastify;
 
 (async function() {
     try {
+        const dev = process.env.NODE_ENV !== 'production';
         // Connect to DB
         //if (process.env.NODE_ENV !== 'test') {
         //    await mongoose.connect(config.mongodb.url, config.mongodb.options);
@@ -30,6 +31,7 @@ module.exports = fastify;
             .register(require('fastify-static'), { root: path.join(__dirname, '/public') });
 
         fastify.register(v1, { prefix: '/v1' });
+
         // /oauth2callback
         fastify.register(oauthPlugin, {
             name: 'googleOAuth2',
@@ -44,10 +46,10 @@ module.exports = fastify;
             // register a fastify url to start the redirect flow
             startRedirectPath: '/login/google',
             // facebook redirect here after the user login
-            callbackUri: 'http://localhost:3000/login/google/callback',
+            callbackUri: dev ? 'http://localhost:3000/login/google/callback' : 'https://www.websheets.app/login/google/callback',
         });
-        // Server
 
+        // Server
         fastify.get('/login/google/callback', async function(request, reply) {
             const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
             // if later you need to refresh the token you can use
@@ -56,7 +58,6 @@ module.exports = fastify;
             reply.redirect('/');
         });
 
-        const dev = process.env.NODE_ENV !== 'production';
         fastify
             .register(require('fastify-nextjs'), { dev })
             .after(() => {
