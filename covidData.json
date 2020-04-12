@@ -1,1 +1,236 @@
-{"statesData":{"West Bengal":{"Reported but unconfirmed":"134","Active":"110","Confirmed":"134","Recovered":"19","Deaths":"5"},"Uttarakhand":{"Reported but unconfirmed":"35","Active":"30","Confirmed":"35","Recovered":"5","Deaths":""},"Uttar Pradesh":{"Reported but unconfirmed":"452","Active":"402","Confirmed":"452","Recovered":"45","Deaths":"5"},"Tripura":{"Reported but unconfirmed":"2","Active":"2","Confirmed":"2","Recovered":"","Deaths":""},"Telangana":{"Reported but unconfirmed":"504","Active":"452","Confirmed":"504","Recovered":"43","Deaths":"9"},"Tamil Nadu":{"Reported but unconfirmed":"969","Active":"915","Confirmed":"969","Recovered":"44","Deaths":"10"},"Rajasthan":{"Reported but unconfirmed":"700","Active":"676","Confirmed":"700","Recovered":"21","Deaths":"3"},"Punjab":{"Reported but unconfirmed":"151","Active":"135","Confirmed":"151","Recovered":"5","Deaths":"11"},"Puducherry":{"Reported but unconfirmed":"7","Active":"6","Confirmed":"7","Recovered":"1","Deaths":""},"Odisha":{"Reported but unconfirmed":"50","Active":"47","Confirmed":"50","Recovered":"2","Deaths":"1"},"Mizoram":{"Reported but unconfirmed":"1","Active":"1","Confirmed":"1","Recovered":"","Deaths":""},"Manipur":{"Reported but unconfirmed":"2","Active":"1","Confirmed":"2","Recovered":"1","Deaths":""},"Maharashtra ":{"Reported but unconfirmed":"1761","Active":"1426","Confirmed":"1761","Recovered":"208","Deaths":"127"},"Madhya Pradesh":{"Reported but unconfirmed":"532","Active":"496","Confirmed":"532","Recovered":"","Deaths":"36"},"Ladakh":{"Reported but unconfirmed":"15","Active":"5","Confirmed":"15","Recovered":"10","Deaths":""},"Kerala":{"Reported but unconfirmed":"364","Active":"239","Confirmed":"364","Recovered":"123","Deaths":"2"},"Karnataka":{"Reported but unconfirmed":"214","Active":"171","Confirmed":"214","Recovered":"37","Deaths":"6"},"Jharkhand":{"Reported but unconfirmed":"17","Active":"16","Confirmed":"17","Recovered":"","Deaths":"1"},"Jammu & Kashmir":{"Reported but unconfirmed":"207","Active":"197","Confirmed":"207","Recovered":"6","Deaths":"4"},"Himachal Pradesh":{"Reported but unconfirmed":"32","Active":"25","Confirmed":"32","Recovered":"6","Deaths":"1"},"Haryana":{"Reported but unconfirmed":"177","Active":"145","Confirmed":"177","Recovered":"29","Deaths":"3"},"Gujarat":{"Reported but unconfirmed":"432","Active":"366","Confirmed":"432","Recovered":"44","Deaths":"22"},"Goa":{"Reported but unconfirmed":"7","Active":"2","Confirmed":"7","Recovered":"5","Deaths":""},"Delhi":{"Reported but unconfirmed":"1069","Active":"1025","Confirmed":"1069","Recovered":"25","Deaths":"19"},"Dadra Nagar Haveli":{"Reported but unconfirmed":"1","Active":"","Confirmed":"","Recovered":"","Deaths":""},"Chattisgarh":{"Reported but unconfirmed":"18","Active":"9","Confirmed":"18","Recovered":"9","Deaths":""},"Chandigarh":{"Reported but unconfirmed":"19","Active":"12","Confirmed":"19","Recovered":"7","Deaths":""},"Bihar":{"Reported but unconfirmed":"63","Active":"62","Confirmed":"63","Recovered":"","Deaths":"1"},"Assam":{"Reported but unconfirmed":"29","Active":"28","Confirmed":"29","Recovered":"","Deaths":"1"},"Arunachal Pradesh":{"Reported but unconfirmed":"1","Active":"1","Confirmed":"1","Recovered":"","Deaths":""},"Andhra Pradesh":{"Reported but unconfirmed":"381","Active":"364","Confirmed":"381","Recovered":"11","Deaths":"6"},"Andaman & Nicobar":{"Reported but unconfirmed":"11","Active":"1","Confirmed":"11","Recovered":"10","Deaths":""}},"total":{"Reported but unconfirmed":"8357","Active":"7367","Confirmed":"8356","Recovered":"706","Deaths":"273"},"source":{"link":"https://www.mohfw.gov.in/"}}
+{
+  "statesData": {
+    "West Bengal": {
+      "Reported but unconfirmed": "134",
+      "Active": "110",
+      "Confirmed": "134",
+      "Recovered": "19",
+      "Deaths": "5"
+    },
+    "Uttarakhand": {
+      "Reported but unconfirmed": "35",
+      "Active": "30",
+      "Confirmed": "35",
+      "Recovered": "5",
+      "Deaths": ""
+    },
+    "Uttar Pradesh": {
+      "Reported but unconfirmed": "452",
+      "Active": "402",
+      "Confirmed": "452",
+      "Recovered": "45",
+      "Deaths": "5"
+    },
+    "Tripura": {
+      "Reported but unconfirmed": "2",
+      "Active": "2",
+      "Confirmed": "2",
+      "Recovered": "",
+      "Deaths": ""
+    },
+    "Telangana": {
+      "Reported but unconfirmed": "504",
+      "Active": "452",
+      "Confirmed": "504",
+      "Recovered": "43",
+      "Deaths": "9"
+    },
+    "Tamil Nadu": {
+      "Reported but unconfirmed": "969",
+      "Active": "915",
+      "Confirmed": "969",
+      "Recovered": "44",
+      "Deaths": "10"
+    },
+    "Rajasthan": {
+      "Reported but unconfirmed": "700",
+      "Active": "676",
+      "Confirmed": "700",
+      "Recovered": "21",
+      "Deaths": "3"
+    },
+    "Punjab": {
+      "Reported but unconfirmed": "151",
+      "Active": "135",
+      "Confirmed": "151",
+      "Recovered": "5",
+      "Deaths": "11"
+    },
+    "Puducherry": {
+      "Reported but unconfirmed": "7",
+      "Active": "6",
+      "Confirmed": "7",
+      "Recovered": "1",
+      "Deaths": ""
+    },
+    "Odisha": {
+      "Reported but unconfirmed": "50",
+      "Active": "47",
+      "Confirmed": "50",
+      "Recovered": "2",
+      "Deaths": "1"
+    },
+    "Mizoram": {
+      "Reported but unconfirmed": "1",
+      "Active": "1",
+      "Confirmed": "1",
+      "Recovered": "",
+      "Deaths": ""
+    },
+    "Manipur": {
+      "Reported but unconfirmed": "2",
+      "Active": "1",
+      "Confirmed": "2",
+      "Recovered": "1",
+      "Deaths": ""
+    },
+    "Maharashtra ": {
+      "Reported but unconfirmed": "1761",
+      "Active": "1426",
+      "Confirmed": "1761",
+      "Recovered": "208",
+      "Deaths": "127"
+    },
+    "Madhya Pradesh": {
+      "Reported but unconfirmed": "532",
+      "Active": "496",
+      "Confirmed": "532",
+      "Recovered": "",
+      "Deaths": "36"
+    },
+    "Ladakh": {
+      "Reported but unconfirmed": "15",
+      "Active": "5",
+      "Confirmed": "15",
+      "Recovered": "10",
+      "Deaths": ""
+    },
+    "Kerala": {
+      "Reported but unconfirmed": "364",
+      "Active": "239",
+      "Confirmed": "364",
+      "Recovered": "123",
+      "Deaths": "2"
+    },
+    "Karnataka": {
+      "Reported but unconfirmed": "214",
+      "Active": "171",
+      "Confirmed": "214",
+      "Recovered": "37",
+      "Deaths": "6"
+    },
+    "Jharkhand": {
+      "Reported but unconfirmed": "17",
+      "Active": "16",
+      "Confirmed": "17",
+      "Recovered": "",
+      "Deaths": "1"
+    },
+    "Jammu & Kashmir": {
+      "Reported but unconfirmed": "207",
+      "Active": "197",
+      "Confirmed": "207",
+      "Recovered": "6",
+      "Deaths": "4"
+    },
+    "Himachal Pradesh": {
+      "Reported but unconfirmed": "32",
+      "Active": "25",
+      "Confirmed": "32",
+      "Recovered": "6",
+      "Deaths": "1"
+    },
+    "Haryana": {
+      "Reported but unconfirmed": "177",
+      "Active": "145",
+      "Confirmed": "177",
+      "Recovered": "29",
+      "Deaths": "3"
+    },
+    "Gujarat": {
+      "Reported but unconfirmed": "432",
+      "Active": "366",
+      "Confirmed": "432",
+      "Recovered": "44",
+      "Deaths": "22"
+    },
+    "Goa": {
+      "Reported but unconfirmed": "7",
+      "Active": "2",
+      "Confirmed": "7",
+      "Recovered": "5",
+      "Deaths": ""
+    },
+    "Delhi": {
+      "Reported but unconfirmed": "1069",
+      "Active": "1025",
+      "Confirmed": "1069",
+      "Recovered": "25",
+      "Deaths": "19"
+    },
+    "Dadra Nagar Haveli": {
+      "Reported but unconfirmed": "1",
+      "Active": "",
+      "Confirmed": "",
+      "Recovered": "",
+      "Deaths": ""
+    },
+    "Chattisgarh": {
+      "Reported but unconfirmed": "18",
+      "Active": "9",
+      "Confirmed": "18",
+      "Recovered": "9",
+      "Deaths": ""
+    },
+    "Chandigarh": {
+      "Reported but unconfirmed": "19",
+      "Active": "12",
+      "Confirmed": "19",
+      "Recovered": "7",
+      "Deaths": ""
+    },
+    "Bihar": {
+      "Reported but unconfirmed": "63",
+      "Active": "62",
+      "Confirmed": "63",
+      "Recovered": "",
+      "Deaths": "1"
+    },
+    "Assam": {
+      "Reported but unconfirmed": "29",
+      "Active": "28",
+      "Confirmed": "29",
+      "Recovered": "",
+      "Deaths": "1"
+    },
+    "Arunachal Pradesh": {
+      "Reported but unconfirmed": "1",
+      "Active": "1",
+      "Confirmed": "1",
+      "Recovered": "",
+      "Deaths": ""
+    },
+    "Andhra Pradesh": {
+      "Reported but unconfirmed": "381",
+      "Active": "364",
+      "Confirmed": "381",
+      "Recovered": "11",
+      "Deaths": "6"
+    },
+    "Andaman & Nicobar": {
+      "Reported but unconfirmed": "11",
+      "Active": "1",
+      "Confirmed": "11",
+      "Recovered": "10",
+      "Deaths": ""
+    }
+  },
+  "total": {
+    "Reported but unconfirmed": "8357",
+    "Active": "7367",
+    "Confirmed": "8356",
+    "Recovered": "706",
+    "Deaths": "273"
+  },
+  "source": { "link": "https://www.mohfw.gov.in/" }
+}
