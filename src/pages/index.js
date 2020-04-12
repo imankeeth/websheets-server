@@ -28,7 +28,7 @@ function IndexPage() {
                         <NavLink href="/" fontSize={3}>
                             WEBSHEETS
                         </NavLink>
-                        <CallToAction href="#" ml="auto">
+                        <CallToAction href="/login/google" ml="auto">
                             Get Started
                         </CallToAction>
                     </Flex>

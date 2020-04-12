@@ -14,6 +14,7 @@ const v1 = (fastify, opts, next) => {
     fs.readdirSync(directory).forEach(file => {
         const routePath = path.join(directory, file);
         const routes = require(routePath)(fastify);
+        console.log('routes are---', routes);
         routes.forEach(route => fastify.route(route));
     });
 

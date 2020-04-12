@@ -12,5 +12,11 @@ module.exports = () => {
             schema: schema.keepAlive,
             handler: controller.keepAlive,
         },
+        {
+            method: 'GET',
+            url: '/covid-sheet',
+            schema: schema.CovidSheetData,
+            handler: controller.CovidSheetData
+        }
     ];
 };

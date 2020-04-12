@@ -2,10 +2,10 @@ require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
-
 const config = require('./config');
 const { v1 } = require('./routes');
 const fastify = require('fastify')(config.fastify);
+const oauthPlugin = require('fastify-oauth2')
 
 // Export fastify for testing purpose
 module.exports = fastify;
@@ -29,9 +29,36 @@ module.exports = fastify;
         fastify.register(require('fastify-nextjs'), { dev }).after(() => {
             fastify.next('/');
         });
-        fastify.register(v1, { prefix: '/v1' });
 
+        fastify.register(v1, { prefix: '/v1' });
+        // /oauth2callback
+        fastify.register(oauthPlugin, {
+            name: 'googleOAuth2',
+            scope: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+            credentials: {
+              client: {
+                id: process.env.CLIENT_ID,
+                secret: process.env.CLIENT_SECRET
+              },
+              auth: oauthPlugin.GOOGLE_CONFIGURATION
+            },
+            // register a fastify url to start the redirect flow
+            startRedirectPath: '/login/google',
+            // facebook redirect here after the user login
+            callbackUri: 'http://localhost:3000/login/google/callback'
+          })
         // Server
+
+        fastify.get('/login/google/callback', async function (request, reply) {
+            const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request)
+          
+            console.log('token we got---------------------------',token.access_token)
+          
+            // if later you need to refresh the token you can use
+            // const newToken = await this.getNewAccessTokenUsingRefreshToken(token.refresh_token)
+          
+            reply.redirect('/');
+          });
 
         await fastify.listen(config.port, '0.0.0.0');
         //fastify.swagger();
