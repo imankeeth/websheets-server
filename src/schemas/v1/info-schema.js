@@ -15,17 +15,4 @@ module.exports = {
             500: errorSchema,
         },
     },
-    CovidSheetData: {
-        description: 'Get data of COVID sheet',
-        tags: ['Info'],
-        summary: 'Obtain the status of the API',
-        response: {
-            200: {
-                description: 'Successful response',
-                type: 'string'
-            },
-            400: notFoundSchema,
-            500: errorSchema
-        }
-    }
 };

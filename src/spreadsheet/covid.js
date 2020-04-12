@@ -7,12 +7,12 @@ const CovidSheetData = (token) => {
 
     sheets.spreadsheets.values.get(
         {
-            auth: 'AIzaSyCukHocZ6K1biwSYFPNQmOs_-OL7U8fnkk',
-            spreadsheetId: '1uKqaxMd5gkghBKMmp_fbnLRFLdic_Kv-i_802f77Ih0',
+            auth: process.env.GOOGLE_API_KEY,
+            spreadsheetId: process.envSPREADSHEET_ID,
             range: 'Main!A1:G35',
         },
         (err, res) => {
-            if (err) return console.log('The API returned an error: ' + err);
+            if (err) return console.log('The API returned an error: ', err);
 
             const rows = res.data.values.filter((data) => data.length !== 0);
             if (rows.length) {
@@ -74,8 +74,8 @@ const getOthers = (token) => {
     const sheets = google.sheets({ version: 'v4', token });
     sheets.spreadsheets.values.get(
         {
-            auth: 'AIzaSyCukHocZ6K1biwSYFPNQmOs_-OL7U8fnkk',
-            spreadsheetId: '1uKqaxMd5gkghBKMmp_fbnLRFLdic_Kv-i_802f77Ih0',
+            auth: process.env.GOOGLE_API_KEY,
+            spreadsheetId: process.envSPREADSHEET_ID,
             range: 'Main!A38:G38',
         },
         (err, res) => {
@@ -89,7 +89,7 @@ const getOthers = (token) => {
                 source,
             };
 
-            var redisData = {};
+            let redisData = {};
             redisData.items = { value: JSON.stringify(covid19) };
             try {
                 client.hmset('items', redisData.items);
