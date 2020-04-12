@@ -10,6 +10,7 @@
     "url": "https://github.com/imankit/websheets-server.git"
   },
   "scripts": {
+    "build": "next build",
     "start:dev": "NODE_ENV=dev nodemon src/app.js",
     "start": "node src/app.js",
     "test": "jest",
