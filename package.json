@@ -1,0 +1,35 @@
+{
+  "name": "Websheets-API",
+  "version": "1.0.0",
+  "description": "Websheets-API",
+  "main": "app.js",
+  "author": "Ankeeth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imankit/websheets-server.git"
+  },
+  "scripts": {
+    "start:dev": "NODE_ENV=dev nodemon src/app.js",
+    "start": "NODE_ENV=prod node src/app.js",
+    "test": "jest",
+    "format": "prettier-eslint --single-quote --tab-width 4 trailing-comma es5 --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^7.0.0",
+    "fastify": "^2.0.0",
+    "fastify-basic-auth": "^0.3.1",
+    "fastify-boom": "^0.1.0",
+    "fastify-swagger": "^2.3.2",
+    "mongoose": "^5.4.15",
+    "nodemon": "^1.17.3",
+    "pino-pretty": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.7.1",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
