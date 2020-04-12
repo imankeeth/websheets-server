@@ -24,14 +24,10 @@ module.exports = fastify;
 
         // Plugins
         fastify.register(require('fastify-boom'));
-        //fastify.register(require('fastify-swagger'), config.documentation);
-        fastify.register(require('fastify-static'), {
-            root: path.join(__dirname, '/public'),
-        });
-        const dev = process.env.NODE_ENV !== 'production';
-        fastify.register(require('fastify-nextjs'), { dev }).after(() => {
-            fastify.next('/');
-        });
+        fastify.register(require('fastify-swagger'), config.documentation);
+        fastify
+            .register(require('fastify-compress'), { threshold: 0 })
+            .register(require('fastify-static'), { root: path.join(__dirname, '/public') });
 
         fastify.register(v1, { prefix: '/v1' });
         // /oauth2callback
@@ -53,22 +49,28 @@ module.exports = fastify;
         // Server
 
         fastify.get('/login/google/callback', async function(request, reply) {
-            const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(
-                request
-            );
+            const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
             // if later you need to refresh the token you can use
             // const newToken = await this.getNewAccessTokenUsingRefreshToken(token.refresh_token)
             CovidSheetData(token);
             reply.redirect('/');
         });
 
+        const dev = process.env.NODE_ENV !== 'production';
+        fastify
+            .register(require('fastify-nextjs'), { dev })
+            .after(() => {
+                fastify.next('/');
+                fastify.next('/user/:id', (app, req, reply) => {
+                    const userId = req.params.id;
+                    // `app` is the Next instance
+                    app.render(req.raw, reply.res, `/user/${userId}`, req.query, {})
+                });
+            });
+
         await fastify.listen(config.port, '0.0.0.0');
-        //fastify.swagger();
-        fastify.log.info(
-            '%s listening in %s environment',
-            config.name,
-            process.env.NODE_ENV
-        );
+        fastify.swagger();
+        fastify.log.info('%s listening in %s environment', config.name, process.env.NODE_ENV);
     } catch (err) {
         fastify.log.error(err);
         process.exit(1);

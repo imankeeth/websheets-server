@@ -5,6 +5,8 @@ import { ServerStyleSheet } from 'styled-components';
 const bodyStyle = {
     margin: 0,
     padding: 0,
+    height: '100vh',
+    width: '100vw',
 };
 
 export default class MyDocument extends Document {
@@ -15,7 +17,7 @@ export default class MyDocument extends Document {
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
-                    enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+                    enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
                 });
 
             const initialProps = await Document.getInitialProps(ctx);
@@ -42,6 +44,6 @@ export default class MyDocument extends Document {
                     <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }

@@ -1,22 +1,13 @@
 import React from 'react';
-import {
-    Provider,
-    Heading,
-    Subhead,
-    Flex,
-    Box,
-    Relative,
-    Absolute,
-    NavLink,
-} from 'rebass';
+import {Provider, Heading, Subhead, Flex, Box, Relative, Absolute, NavLink, Small} from 'rebass';
 import {
     Hero,
     CallToAction,
     ScrollDownIndicator,
     Section,
     MacWindow,
-    Phone,
     PricingTier,
+    SignUp,
 } from 'react-landing-page';
 
 const featherCheckmark = (
@@ -41,6 +32,14 @@ const theme = {
     },
 };
 function IndexPage() {
+    const addEmail = () =>
+        new Promise((resolve, reject) => {
+            resolve(true);
+        });
+    const addToNewsLetter = async (email) => {
+        await addEmail();
+        console.log('Newsletter sent to email: ', email);
+    };
     return (
         <Provider>
             <Relative pb={5}>
@@ -77,15 +76,13 @@ function IndexPage() {
                             dashboard
                         </Subhead>
                         <Flex mt={3} flexWrap="wrap" justifyContent="center">
-                            {/* <Provider theme={{ colors: { blue: '#a79344' } }}> */}
                             <CallToAction
                                 theme={theme}
-                                href="/getting-started"
+                                href="/login/google"
                                 mr={3}
                             >
                                 Get Started Now
                             </CallToAction>
-                            {/* </Provider> */}
                         </Flex>
                     </Box>
                 </Flex>
@@ -93,22 +90,56 @@ function IndexPage() {
             </Hero>
             <Section width={1} bg="#0b2647" color='white'>
                 <Heading color="white">Pricing</Heading>
-                <PricingTier
-                    bg="#041121"
-                    tierName="Basic"
-                    price="Free"
-                    billingType="1 website"
-                    sellingPoints={[
-                        '✔  Connect 1 sheet',
-                        '✔  Custom domain with SSL',
-                        '✔  3 Subpages',
-                    ]}
-                >
-                    <CallToAction theme={theme} width={1} mt="auto">
-                        Get Started
-                    </CallToAction>
-                </PricingTier>
+                <Flex justifyContent="space-around">
+                    <PricingTier
+                        width={2 / 5}
+                        bg="#041121"
+                        tierName="Personal"
+                        price="Free"
+                        billingType="1 website"
+                        sellingPoints={[
+                            '-  Connect 1 sheet',
+                            '-  Google Analytics',
+                            '-  Upto 3 API integrations',
+                            '-  Business hour support',
+                            '-  1+ day response',
+                        ]}
+                    >
+                        <CallToAction theme={theme} href="/login/google" width={1} mt="auto">
+                            Get Started
+                        </CallToAction>
+                    </PricingTier>
+                    <PricingTier
+                        bg="grey"
+                        width={2 / 5}
+                        tierName="Premium"
+                        price="$$"
+                        billingType="Unlimited websites 💯"
+                        sellingPoints={[
+                            '-  Custom domain with SSL',
+                            '-  Social authentication',
+                            `-  Remove 'Made with websheets.app' branding`,
+                            '-  24x7 Support',
+                            '** More premium feature under development',
+                        ]}
+                    >
+                        <CallToAction disabled bg="black" width={1} mt="auto">
+                            Coming soon
+                        </CallToAction>
+                    </PricingTier>
+                </Flex>
             </Section>
+            <Section width={1}>
+                <Flex flexDirection="column" justifyContent="center">
+                    <Heading>Sign up to our Newsletter</Heading>
+                    <SignUp onSubmit={addToNewsLetter} mt={3} mx='auto' width={1}/>
+                </Flex>
+            </Section>
+            <Flex is="footer" alignItems="center" p={3}>
+                <NavLink children="Terms & condition" href="#"/>
+                <NavLink children="Privacy Policy" href="#"/>
+                <Small color="grey" ml="auto">© Websheets.app, 2020</Small>
+            </Flex>
         </Provider>
     );
 }

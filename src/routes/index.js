@@ -11,11 +11,11 @@ const path = require('path');
 const v1 = (fastify, opts, next) => {
     const directory = path.join(__dirname, 'v1');
 
-    fs.readdirSync(directory).forEach(file => {
+    fs.readdirSync(directory).forEach((file) => {
         const routePath = path.join(directory, file);
         const routes = require(routePath)(fastify);
-        console.log('routes are---', routes);
-        routes.forEach(route => fastify.route(route));
+        //console.log('routes are---', routes);
+        routes.forEach((route) => fastify.route(route));
     });
 
     next();

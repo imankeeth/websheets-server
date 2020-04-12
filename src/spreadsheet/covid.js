@@ -1,5 +1,4 @@
 const { google } = require('googleapis');
-
 const client = require('redis').createClient(process.env.REDIS_URL);
 
 const CovidSheetData = (token) => {
@@ -88,7 +87,6 @@ const getOthers = (token) => {
                 ...covid19,
                 source,
             };
-
             let redisData = {};
             redisData.items = { value: JSON.stringify(covid19) };
             try {

@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53664ef0-c68a-4224-ab48-7b014be2f595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/landing-page-sheet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/transformed-website.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/user/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/spreadsheet-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registerNext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/env/config-dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env/config-dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/env/config-production.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env/config-production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/env/config-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env/config-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/v1/info-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/v1/info-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/v1/info-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/v1/info-route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/common/error-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/common/error-schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/common/not-found-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/common/not-found-schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schemas/v1/info-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/v1/info-schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spreadsheet/covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/spreadsheet/covid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,9 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="standardjs.codestyle.accepted" value="true" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -92,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.format" />
         <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586641111471</updated>
       <workItem from="1586641113217" duration="10760000" />
-      <workItem from="1586657586541" duration="8617000" />
+      <workItem from="1586657586541" duration="29228000" />
     </task>
     <servers />
   </component>
@@ -120,38 +123,38 @@
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
     <state x="511" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586652666826" />
-    <state width="791" height="297" key="GridCell.Tab.0.bottom" timestamp="1586668933580">
+    <state width="704" height="210" key="GridCell.Tab.0.bottom" timestamp="1586702892254">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="791" height="297" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586668933580" />
-    <state width="791" height="297" key="GridCell.Tab.0.center" timestamp="1586668933578">
+    <state width="704" height="210" key="GridCell.Tab.0.bottom/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586702892254" />
+    <state width="704" height="210" key="GridCell.Tab.0.center" timestamp="1586702892236">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="791" height="297" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586668933578" />
-    <state width="791" height="297" key="GridCell.Tab.0.left" timestamp="1586668933578">
+    <state width="704" height="210" key="GridCell.Tab.0.center/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586702892236" />
+    <state width="704" height="210" key="GridCell.Tab.0.left" timestamp="1586702892221">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="791" height="297" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586668933578" />
-    <state width="791" height="297" key="GridCell.Tab.0.right" timestamp="1586668933579">
+    <state width="704" height="210" key="GridCell.Tab.0.left/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586702892221" />
+    <state width="704" height="210" key="GridCell.Tab.0.right" timestamp="1586702892239">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="791" height="297" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586668933579" />
-    <state x="-104" y="-901" key="SettingsEditor" timestamp="1586642580545">
+    <state width="704" height="210" key="GridCell.Tab.0.right/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586702892239" />
+    <state x="-104" y="-901" key="SettingsEditor" timestamp="1586685918503">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-104" y="-901" key="SettingsEditor/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586642580545" />
-    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586659784807">
+    <state x="-104" y="-901" key="SettingsEditor/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586685918503" />
+    <state x="523" y="-776" width="634" height="472" key="find.popup" timestamp="1586702260858">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586659784807" />
+    <state x="523" y="-776" width="634" height="472" key="find.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586702260858" />
     <state x="-120" y="-918" key="new project wizard" timestamp="1586642054664">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-120" y="-918" key="new project wizard/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586642054664" />
-    <state x="22" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1586665689152">
+    <state x="22" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1586695188089">
       <screen x="-120" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="22" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586665689152" />
+    <state x="22" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586695188089" />
     <state x="22" y="-839" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-120.-1080.1920.1080@-120.-1080.1920.1080" timestamp="1586653584819" />
   </component>
 </project>

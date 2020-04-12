@@ -12,5 +12,14 @@ module.exports = () => {
             schema: schema.keepAlive,
             handler: controller.keepAlive,
         },
+<<<<<<< Updated upstream
+=======
+        {
+            method: 'GET',
+            url: '/covid-sheet',
+            schema: schema.CovidSheetData,
+            handler: controller.CovidSheetData,
+        },
+>>>>>>> Stashed changes
     ];
 };
